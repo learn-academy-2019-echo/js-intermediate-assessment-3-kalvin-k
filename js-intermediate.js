@@ -215,6 +215,17 @@ var numbersToAdd2 = [0, 7, -8, 12]
 var numbersToAdd3 = []
 // Expected output: []
 
+
+const adding2 = (arr) => {
+  let total = 0; 
+
+  return arr.map(x => total += x)
+}
+console.log(adding2(numbersToAdd1));
+console.log(adding2(numbersToAdd2));
+console.log(adding2(numbersToAdd3));
+
+
 const adding = (firstNum, secondNum, thirdNum, fourthNum) => {
   let firstAdd = firstNum + secondNum
   let secondAdd = firstAdd + thirdNum
