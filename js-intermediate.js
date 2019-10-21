@@ -5,30 +5,42 @@
 
 // 1. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 
-const getFib = () => {
-  let fibArr = [];
-  const num1 = 1;
-  const num2 = 1;
 
-  fibArr.push(num1, num2)
-  let newFib = fibArr[0] + fibArr[1]
-  fibArr.push(newFib)
-  let newFib2 = fibArr[1] + fibArr[2]
-  fibArr.push(newFib2)
-  let newFib3 = fibArr[2] + fibArr[3]
-  fibArr.push(newFib3)
-  let newFib4= fibArr[3] + fibArr[4]
-  fibArr.push(newFib4)
-  let newFib5 = fibArr[4] + fibArr[5]
-  fibArr.push(newFib5)
-  let newFib6 = fibArr[5] + fibArr[6]
-  fibArr.push(newFib6)
-  let newFib7 = fibArr[6] + fibArr[7]
-  fibArr.push(newFib7)
-
+const fib = () => {
+  const fibArr = [1,1]
+    for (var i = 0; i <= 20; i++) {
+        let pushNum = fibArr[i] + fibArr[i+1]
+        fibArr.push(pushNum)
+    }
   return fibArr
 }
-console.log(getFib());
+console.log(fib());
+  
+
+// const getFib = () => {
+//   let fibArr = [];
+//   const num1 = 1;
+//   const num2 = 1;
+
+//   fibArr.push(num1, num2)
+//   let newFib = fibArr[0] + fibArr[1]
+//   fibArr.push(newFib)
+//   let newFib2 = fibArr[1] + fibArr[2]
+//   fibArr.push(newFib2)
+//   let newFib3 = fibArr[2] + fibArr[3]
+//   fibArr.push(newFib3)
+//   let newFib4= fibArr[3] + fibArr[4]
+//   fibArr.push(newFib4)
+//   let newFib5 = fibArr[4] + fibArr[5]
+//   fibArr.push(newFib5)
+//   let newFib6 = fibArr[5] + fibArr[6]
+//   fibArr.push(newFib6)
+//   let newFib7 = fibArr[6] + fibArr[7]
+//   fibArr.push(newFib7)
+
+//   return fibArr
+// }
+// console.log(getFib());
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
 
