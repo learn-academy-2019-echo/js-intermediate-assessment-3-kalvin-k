@@ -155,6 +155,22 @@ console.log(middleLetter(middleLetters2));
 
 // 8. Write a program to get the area of a sphere using object classes. Create three spheres with different radi as test cases. Area of a sphere =  4πr^2 (four pi r squared)
 
+
+class Sphere {
+  constructor (r) {
+    this.r = r
+  } getArea() {
+    return 4 * Math.PI * this.r **2
+  }
+}
+const mySphere1 = new Sphere(5)
+console.log(mySphere1.getArea());
+const mySphere2 = new Sphere(6)
+console.log(mySphere2.getArea());
+const mySphere3 = new Sphere(7)
+console.log(mySphere3.getArea());
+
+
 const sphere1 = {
   r: 5
 }
